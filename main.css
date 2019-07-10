@@ -4,7 +4,7 @@ body {
     color: #90BC48;
     /* color: #574A99; */
     font-family: sans-serif;
-}
+} 
 
 nav {
     margin-right: 0px;
@@ -41,6 +41,11 @@ nav li{
     float: left;
     font-weight: bold;
     font-size: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 #imgContainer{
@@ -80,7 +85,21 @@ nav li{
  }
 
 #welcome-section{
-    background-image: url("images/computer1.jpg");
+    background-image: url("images/computer1.jpg"),
+    linear-gradient(180deg,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    gray,
+    dimgray,
+    black);
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -89,6 +108,31 @@ nav li{
 #welcome-section h1{
     padding: 10px;
     text-align: center;   
+}
+
+#projects{
+    /* height: 100vh; */
+    background: #000;
+}
+
+#projects h1{
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+#projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.card-img-top{
+    margin-top: 10px;
+    max-height: 180px;
 }
 
 @media only screen and (min-width: 768px) {
